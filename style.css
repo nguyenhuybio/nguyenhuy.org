@@ -1,3 +1,43 @@
+body {
+  background-color: var(--paper) !important;
+  background-image: linear-gradient(rgba(22, 44, 43, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(22, 44, 43, .035) 1px, transparent 1px), radial-gradient(circle at 78% 18%, rgba(231, 123, 98, .16), transparent 26%), radial-gradient(circle at 10% 68%, rgba(127, 163, 150, .13), transparent 27%) !important;
+  background-size: 42px 42px, 42px 42px, auto, auto;
+  background-attachment: fixed;
+}
+
+.hero-links {
+  display: grid !important;
+  grid-template-columns: repeat(3, auto) !important;
+  gap: 28px;
+}
+
+.hero-links a {
+  display: flex !important;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 9px;
+}
+
+.hero-links strong { font-size: 18px; font-weight: 500; }
+.hero-links small { color: var(--ink-soft); font-size: 10px; font-weight: 500; }
+.hero-links span { color: var(--coral); margin-left: 5px; }
+
+.publication {
+  grid-template-columns: 60px minmax(260px, 1.5fr) 1fr 85px 25px !important;
+  gap: 20px !important;
+}
+
+.citation { color: var(--coral); font-size: 11px; line-height: 1.4; }
+.citation b { display: block; color: var(--ink); font-size: 16px; font-weight: 500; }
+
+@media (max-width: 760px) {
+  .hero-links { grid-template-columns: 1fr !important; gap: 15px !important; }
+  .hero-links strong { font-size: 17px; }
+  .publication { grid-template-columns: 42px 1fr 20px !important; gap: 12px !important; }
+  .citation { grid-column: 2; grid-row: 4; margin-top: 6px; }
+  .citation b { display: inline; margin-left: 4px; font-size: 14px; }
+}
  :root {
   --ink: #162c2b;
   --ink-soft: #48615e;
