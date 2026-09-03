@@ -99,6 +99,10 @@ body {
 .cv-awards h3 { display: inline-block; margin-right: 30px; }
 .cv-awards p { display: inline; }
 .cv-awards span { color: var(--coral); padding-inline: 7px; }
+.cv-service { border-top: 1px solid var(--line); padding-top: 28px; }
+.cv-service h3 { margin: 0 0 16px; font-family: var(--serif); font-size: 23px; font-weight: 400; }
+.cv-service p { max-width: 980px; margin: 0 0 9px; color: var(--ink-soft); font-size: 15px; line-height: 1.8; }
+.cv-service b { color: var(--ink); font-weight: 600; }
 .projects-section { padding-block: 110px 30px; }
 @media (max-width: 760px) {
   .cv-section { padding-block: 75px 10px; }
@@ -107,6 +111,8 @@ body {
   .cv-grid { display: block; padding-block: 35px 15px; }
   .cv-block { margin-bottom: 32px; }
   .cv-awards h3 { display: block; margin-bottom: 14px; }
+  .cv-service h3 { font-size: 21px; }
+  .cv-service p { font-size: 14px; }
 }
 .flow-intro { display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; padding: 34px 0 48px; border-bottom: 1px solid var(--line); }
 .project-lede { max-width: 650px; margin: 0; font-family: var(--serif); font-size: 29px; line-height: 1.45; }
