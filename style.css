@@ -7,7 +7,7 @@ body {
 
 .hero-links {
   display: grid !important;
-  grid-template-columns: repeat(3, auto) !important;
+  grid-template-columns: repeat(4, auto) !important;
   gap: 28px;
 }
 
