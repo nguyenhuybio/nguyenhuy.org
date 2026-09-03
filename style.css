@@ -121,6 +121,22 @@ body {
 .flow-step a { margin-top: auto; padding-top: 20px; color: var(--ink); font-size: 10px; font-weight: 600; }.flow-step a b { color: var(--coral); margin-left: 5px; }
 @media (max-width: 900px) { .research-flow { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 760px) { .projects-section { padding-block: 75px 10px; }.flow-intro { display: block; padding-block: 26px 35px; }.project-lede { font-size: 23px; }.project-context { margin-top: 22px; }.research-flow { grid-template-columns: 1fr 1fr; }.flow-step { min-height: 255px; padding: 17px; }.flow-step > i { margin-top: 23px; } }
+
+/* Larger CV type for easier reading */
+.cv-status { font-size: 25px !important; }
+.cv-affiliation, .cv-summary { font-size: 16px !important; line-height: 1.8 !important; }
+.cv-block h3, .cv-awards h3 { font-size: 23px !important; }
+.cv-item b { font-size: 13px !important; }
+.cv-item p, .cv-block > p, .cv-block li, .cv-awards p { font-size: 15px !important; line-height: 1.8 !important; }
+.cv-item small { font-size: 13px !important; line-height: 1.7 !important; }
+@media (max-width: 760px) {
+  .cv-status { font-size: 22px !important; }
+  .cv-affiliation, .cv-summary { font-size: 15px !important; }
+  .cv-block h3, .cv-awards h3 { font-size: 21px !important; }
+  .cv-item b { font-size: 12px !important; }
+  .cv-item p, .cv-block > p, .cv-block li, .cv-awards p { font-size: 14px !important; }
+  .cv-item small { font-size: 12px !important; }
+}
  :root {
   --ink: #162c2b;
   --ink-soft: #48615e;
